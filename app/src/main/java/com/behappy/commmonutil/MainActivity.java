@@ -1,5 +1,6 @@
 package com.behappy.commmonutil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView downloadIV;
     private ImageView pluginIV;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
         //配色页面
         findViewById(R.id.btn4).setOnClickListener(v -> {
-            goColorsList();
 
-        });
-
-        findViewById(R.id.btn4).setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
+            if (count != 6) {
+                goColorsList();
+            }else {
                 if (downloadIV.getVisibility() != View.VISIBLE) {
                     downloadIV.setVisibility(View.VISIBLE);
                     pluginIV.setVisibility(View.VISIBLE);
@@ -52,15 +51,34 @@ public class MainActivity extends AppCompatActivity {
                     downloadIV.setVisibility(View.GONE);
                     pluginIV.setVisibility(View.GONE);
                 }
-                return true;
             }
+            count ++;
+
         });
+
+//        findViewById(R.id.btn4).setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//                if (downloadIV.getVisibility() != View.VISIBLE) {
+//                    downloadIV.setVisibility(View.VISIBLE);
+//                    pluginIV.setVisibility(View.VISIBLE);
+//                }else {
+//                    downloadIV.setVisibility(View.GONE);
+//                    pluginIV.setVisibility(View.GONE);
+//                }
+//                return true;
+//            }
+//        });
 
         downloadIV = findViewById(R.id.download);
         pluginIV = findViewById(R.id.plugin);
 
         downloadIV.setOnClickListener(v -> {
             goDownload();
+        });
+
+        pluginIV.setOnClickListener(v -> {
+            startActivity(new Intent(this, AppInfoActivity.class));
         });
 
         downloadIV.setVisibility(View.GONE);
