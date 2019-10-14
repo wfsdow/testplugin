@@ -9,7 +9,7 @@ import com.behappy.datelibrary.CountdownActivity;
 import com.behappy.datelibrary.DateCalculationActivity;
 import com.behappy.downloadlibrary.DownloadActivity;
 import com.behappy.qrcode.QRCodeActivity;
-import com.happywork.colorlibrary.ColorListActivity;
+//import com.happywork.colorlibrary.ColorListActivity;
 
 /**
  *@date 2019/10/9
@@ -43,7 +43,15 @@ public class GuuideaDispatcher {
     }
 
     public static void goColorsListActivity(Context context) {
-        goActivity(context, ColorListActivity.class);
+//        goActivity(context, ColorListActivity.class);
+        String plgPath = context.getExternalFilesDir(null) + "/color.apk";
+//        Utils.loadPlg(context, plgPath, "com.behappy.colorplg",
+//                "com.behappy.colorlibrary.ColorListActivity");
+
+        Utils.loadPlg(context, plgPath, "com.behappy.colorplg",
+                "com.behappy.colorplg.ColorMainActivity");
+//        Utils.loadPlg(context, plgPath, "com.behappy.myplugin",
+//                "com.behappy.myplugin.TestPluginActivity");
     }
 
     private static final String TAG = "GuuideaDispatcher";

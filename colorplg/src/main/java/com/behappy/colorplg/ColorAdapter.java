@@ -1,4 +1,4 @@
-package com.happywork.colorlibrary;
+package com.behappy.colorplg;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ColorHolder> {
     private List<List<String>> colorsList;

@@ -1,1 +1,1 @@
-include ':app', ':myplugin', ':qrcodeLibrary', ':downloadLibrary', ':dateLibrary', ':randomLibrary', ':colorlibrary'
+include ':app', ':myplugin', ':qrcodeLibrary', ':downloadLibrary', ':dateLibrary', ':randomLibrary', ':colorlibrary', ':colorplg'

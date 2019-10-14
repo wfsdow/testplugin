@@ -1,4 +1,4 @@
-package com.happywork.colorlibrary;
+package com.behappy.colorlibrary;
 
 import org.junit.Test;
 

@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.didi.virtualapk.plugin'
 
-
 android {
     compileSdkVersion 28
+
 
     signingConfigs {
 
@@ -14,9 +14,8 @@ android {
             storePassword '115209'
         }
     }
-
     defaultConfig {
-        applicationId "com.behappy.myplugin"
+        applicationId "com.behappy.colorplg"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -44,10 +43,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+//    implementation project(':colorlibrary')
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
 }
 
 virtualApk {
-    packageId = 0x70             // The package id of Resources.
+    packageId = 0x6f             // The package id of Resources.
     targetHost='../app'    // The path of application module in host project.
     applyHostMapping = true      // [Optional] Default value is true.
 }
+
+

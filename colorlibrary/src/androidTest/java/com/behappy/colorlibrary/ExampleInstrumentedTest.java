@@ -1,4 +1,4 @@
-package com.happywork.colorlibrary;
+package com.behappy.colorlibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
