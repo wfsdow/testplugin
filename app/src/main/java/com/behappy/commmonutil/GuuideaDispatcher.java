@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.behappy.datelibrary.CountdownActivity;
 import com.behappy.datelibrary.DateCalculationActivity;
+import com.behappy.downloadlibrary.ConstantInfo;
 import com.behappy.downloadlibrary.DownloadActivity;
 import com.behappy.qrcode.QRCodeActivity;
 //import com.happywork.colorlibrary.ColorListActivity;
@@ -44,12 +45,12 @@ public class GuuideaDispatcher {
 
     public static void goColorsListActivity(Context context) {
 //        goActivity(context, ColorListActivity.class);
-        String plgPath = context.getExternalFilesDir(null) + "/color.apk";
+        String plgPath = context.getExternalFilesDir(null) + "/" + ConstantInfo.PLUGIN_NAME;
 //        Utils.loadPlg(context, plgPath, "com.behappy.colorplg",
 //                "com.behappy.colorlibrary.ColorListActivity");
 
-        Utils.loadPlg(context, plgPath, "com.behappy.colorplg",
-                "com.behappy.colorplg.ColorMainActivity");
+        Utils.loadPlg2(context, plgPath, "com.behappy.colorplg",
+                "com.behappy.colorplg.ColorListActivity");
 //        Utils.loadPlg(context, plgPath, "com.behappy.myplugin",
 //                "com.behappy.myplugin.TestPluginActivity");
     }
