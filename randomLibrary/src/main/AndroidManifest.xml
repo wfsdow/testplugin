@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.behappy.randomlibrary">
+    package="com.glad.randomlibrary">
 
     <application>
-        <activity android:name="com.behappy.randomlibrary.RandomSelectionActivity"></activity>
+        <activity android:name="com.glad.randomlibrary.RandomSelectionActivity"></activity>
     </application>
 
 </manifest>

@@ -21,7 +21,7 @@
         <!---->
     <!--</com.guuidea.randomlibrary.ItemContainer>-->
 
-    <com.behappy.randomlibrary.Bezier
+    <com.glad.randomlibrary.Bezier
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintLeft_toLeftOf="parent"

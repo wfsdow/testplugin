@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.behappy.qrcode">
+    package="com.glad.qrcode">
 
     <application>
-        <activity android:name="com.behappy.qrcode.QRCodeActivity"></activity>
+        <activity android:name="com.glad.qrcode.QRCodeActivity"></activity>
     </application>
 
 </manifest>

@@ -15,7 +15,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.behappy.colorplg"
+        applicationId "com.glad.colorplg"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
