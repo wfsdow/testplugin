@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.glad.usualutil.bury.BuriedPointUtils;
+import com.glad.usualutil.bury.ConstantString;
+
 public class MainActivity extends AppCompatActivity {
 
     private ImageView downloadIV;
@@ -18,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initViews();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        BuriedPointUtils.saveInfo(ConstantString.APP_EXIT, null);
     }
 
     private void initViews() {
@@ -130,5 +139,8 @@ public class MainActivity extends AppCompatActivity {
     public interface DownloadCallback {
         void complete();
     }
+
+
+
 
 }

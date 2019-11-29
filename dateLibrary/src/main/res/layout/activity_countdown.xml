@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="您选中的时间"
+        android:text="Please select time"
         android:gravity="center"/>
 
     <TextView
@@ -24,7 +24,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/timeTV"
         android:layout_marginTop="20dp"
-        android:text="重置"
+        android:text="Reset"
         android:gravity="center"/>
 
     <TextView
@@ -35,6 +35,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/resetTV"
         android:layout_marginTop="20dp"
-        android:text="剩余时间"
+        android:text="The remaining time"
         android:gravity="center"/>
 </android.support.constraint.ConstraintLayout>

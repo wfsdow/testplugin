@@ -22,7 +22,7 @@ public class DownloadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download);
 
-        initView();
+        //initView();
     }
 
     private void initView() {

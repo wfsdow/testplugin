@@ -36,7 +36,7 @@ public class CountdownActivity extends AppCompatActivity {
 
         String timeStr = readSelectedTime(this);
         if (TextUtils.isEmpty(timeStr)) {
-            seletedTimeTV.setText("请选择指定倒计时的时间");
+            seletedTimeTV.setText("Please select time");
         }else {
             setSelectedTime(seletedTimeTV, remainTimeTV, timeStr);
         }

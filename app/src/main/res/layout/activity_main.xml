@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="二维码"
+            android:text="QR code"
             android:layout_marginTop="18dp"/>
     </LinearLayout>
 
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="日期计算"
+            android:text="Date calculation"
             android:layout_marginTop="18dp"/>
     </LinearLayout>
 
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="18dp"
-            android:text="倒计时" />
+            android:text="Countdown" />
     </LinearLayout>
 
     <!--<ImageView-->
@@ -143,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="18dp"
-            android:text="配色方案" />
+            android:text="Coloring scheme" />
     </LinearLayout>
 
     <!--<ImageView-->
